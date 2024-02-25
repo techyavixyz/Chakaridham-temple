@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मंदिर वेबसाइट</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for the popup */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>सिद्धगुफाचकरियोगाश्रम</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">जानकारी</a></li>
+                <li><a href="#services">सेवाएं</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="popup" class="popup">
+        <!-- QR Code image will go here -->
+        <img src="C:\Users\Avinash\Downloads\upi_1708845990329.png" alt="QR Code">
+        <button onclick="hidePopup()">Close</button>
+    </div>
+    <div class="popup-overlay" onclick="hidePopup()"></div>
+
+    <section id="services">
+        <h2>हमारी सेवाएं</h2>
+        <ul>
+                <li>धार्मिक कार्यक्रम</li>
+                <li>प्रसाद वितरण</li>
+                <li>आध्यात्मिक बातचीत</li>
+                <li>समुदाय कार्यक्रम</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>हमसे संपर्क करें</h2>
+        <p>यहाँ संपर्क जानकारी प्रदान करें।</p>
+    </section>
+
+    <section id="about">
+        <h2>about us</h2>
+        <p>यहाँ आप अपने मंदिर का परिचय दे सकते हैं। Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque distinctio provident fugiat, maxime facere quaerat recusandae libero, aliquam tempora qui in quibusdam quae sequi architecto animi adipisci. Dignissimos, commodi voluptatem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, tempore quo ipsa cum veniam provident animi perferendis quaerat aspernatur alias aliquam deleniti, ducimus cumque illum explicabo adipisci natus incidunt at Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas voluptates ab fugit libero placeat cumque? Sed, doloribus. Impedit officiis aliquam temporibus accusantium in assumenda quidem earum. Est praesentium perferendis illo quod libero repellendus nihil distinctio voluptates aut, laudantium, ducimus officia deleniti. Ipsum odio dolor laborum tempora a ullam recusandae accusantium vero magnam accusamus quis libero harum sit atque, ipsa aliquam id ipsam similique possimus cupiditate! Ullam animi natus sit vitae veniam dolore, recusandae sunt, excepturi similique iure odit voluptates facilis enim velit nesciunt porro officiis temporibus eos! Doloremque vel sequi libero. Repellat voluptate temporibus voluptatibus libero exercitationem eum alias.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 मंदिर वेबसाइट। सभी अधिकार सुरक्षित।</p>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>
